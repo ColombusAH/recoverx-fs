@@ -22,4 +22,4 @@ app.get('/*', (req, res) => {
     );
 });
 
-app.listen(+PORT, HOST, () => console.log('Server started'));
+app.listen(+PORT, HOST, () => console.log('Server started!'));
