@@ -1,7 +1,6 @@
 {
   "name": "react-redux-template",
   "version": "2.3.0",
-  "type": "module",
   "description": "Starter kit for modern web applications",
   "homepage": "https://react-pwa.surenatoyan.com/",
   "repository": {
@@ -18,7 +17,7 @@
     "tauri": "tauri",
     "dev": "tsc && vite --mode=development",
     "dev-node": "tsx watch src/server",
-    "start": "node dist/server/index.js",
+    "start": "node dist/server/",
     "build": "tsc && vite --mode=production build && tsc -p tsconfig.server.json",
     "build-be": "tsc && tsc -p tsconfig.server.json",
     "preview": "vite --mode=development preview",
