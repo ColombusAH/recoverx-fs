@@ -1,3 +1,2 @@
 
-import { UserCredentials } from './user-credentials.entity'
-export { UserCredentials };
+export *  from './user-credentials.entity'

@@ -1,13 +1,14 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "noEmit": false,
-      "outDir": "dist",
-      "skipLibCheck": true,
-      "rootDir": "src"
-    },
-    "include": ["src/server/**/*"],
-    "exclude": ["node_modules"]
-  }
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "noEmit": false,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/server/index.ts",
+    "src/**/*.entity.ts",
+    "src/**/*.controller.ts"
+  ]
+}

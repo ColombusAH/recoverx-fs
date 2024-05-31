@@ -1,7 +1,7 @@
 import express from "express";
 import { api } from "../api";
 import { remult } from "remult";
-import { UserCredentials } from "@/shared";
+import { UserCredentials } from "../../shared/index";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 

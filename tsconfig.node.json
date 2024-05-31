@@ -6,7 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
+    "lib": ["ESNext"]
   },
   "include": ["vite.config.ts", "manifest.json"]
 }
