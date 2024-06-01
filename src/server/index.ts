@@ -12,7 +12,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 const app = express();
 const openApiDocument = api.openApiDoc({ title: "RecoverX" });
 app.use(api);
-app.use(authRoutes);
+app.use('/api',authRoutes);
 app.get("/api/openApi.json", (req, res) => res.json(openApiDocument));
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(openApiDocument));
 

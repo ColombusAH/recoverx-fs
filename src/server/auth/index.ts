@@ -29,6 +29,7 @@ router.post("/login", api.withRemult, async (req, res) => {
 router.post("/register", api.withRemult, async (req, res) => {
     const usersCredentialsRepo = remult.repo(UserCredentials);
     const { email, password } = req.body;
+    console.log(email, password);
     const user = await usersCredentialsRepo.findOne({ where: { email } });
     if (user) {
         throw new Error('User already exists');
