@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import * as path from 'path';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react'
+
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -12,21 +13,21 @@ export default defineConfig({
     port: 1420,
     strictPort: true,
     host: '0.0.0.0',
-    proxy: { "/api": "http://localhost:3002" },
+    proxy: { "/api": "http://localhost:3000" },
   },
   plugins: [
     react(),
-    VitePWA({
-      manifest,
-      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
-      // switch to "true" to enable sw on development
-      devOptions: {
-        enabled: false,
-      },
-      workbox: {
-        globPatterns: ['**/*.{js,css,html}', '**/*.{svg,png,jpg,gif}'],
-      },
-    }),
+    // VitePWA({
+    //   manifest,
+    //   includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+    //   // switch to "true" to enable sw on development
+    //   devOptions: {
+    //     enabled: false,
+    //   },
+    //   workbox: {
+    //     globPatterns: ['**/*.{js,css,html}', '**/*.{svg,png,jpg,gif}'],
+    //   },
+    // }),
   ],
   resolve: {
     alias: {

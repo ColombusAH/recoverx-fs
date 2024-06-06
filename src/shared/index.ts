@@ -1,2 +1,3 @@
 
-export *  from './user-credentials.entity'
+export *  from './account-manager.enitty';
+export *  from './user.entity';

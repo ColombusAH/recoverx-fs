@@ -9,7 +9,7 @@ import Pages from '@/routes/Pages';
 import Header from '@/sections/Header';
 import HotKeys from '@/sections/HotKeys';
 import Notifications from '@/sections/Notifications';
-import SW from '@/sections/SW';
+// import SW from '@/sections/SW';
 import Sidebar from '@/sections/Sidebar';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <CssBaseline />
       <Notifications />
       <HotKeys />
-      <SW />
+      {/* <SW /> */}
       <BrowserRouter>
         <Header />
         <Sidebar />

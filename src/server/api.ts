@@ -1,9 +1,9 @@
 
-import { UserCredentials } from '../shared'
+import { User, AccountManager } from '../shared'
 import { remultExpress } from 'remult/remult-express';
 
 export const api = remultExpress({
-    entities: [UserCredentials],
+    entities: [AccountManager, User],
     admin: true,
     getUser: (req: any) => req.user,
 })

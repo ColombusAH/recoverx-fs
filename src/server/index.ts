@@ -3,7 +3,6 @@ import { api } from './api';
 import swaggerUi from 'swagger-ui-express';
 import authRoutes from './auth';
 import path from 'path';
-import { fileURLToPath } from 'url';
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '0.0.0.0';
 // const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file

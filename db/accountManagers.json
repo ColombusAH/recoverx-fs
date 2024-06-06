@@ -1,0 +1,12 @@
+[
+  {
+    "id": "bq1aheb3jgv9fibjsrmo0xeg",
+    "tenantId": "",
+    "email": "rick@gmail.com",
+    "emailVerified": true,
+    "hashedPassword": "$2b$10$mPveUUkkKaHmW8/MCMatOOj5m1QT4EZuP.cio1yDsObpnQr13PVOy",
+    "isActive": true,
+    "role": "admin",
+    "createdAt": "2024-06-01T22:23:41.474Z"
+  }
+]

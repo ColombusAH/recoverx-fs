@@ -1,16 +1,12 @@
 // src/shared/Task.ts
 
-import { Entity, Fields, Validators } from 'remult'
+import { Allow, Entity, Fields, Validators } from 'remult'
 
-@Entity('users-credentials', {
+@Entity<AccountManager>('accountManagers', {
     allowApiCrud: true,
     allowApiDelete: true,
-    allowApiRead: true,
-    allowApiInsert : true,
-    allowApiUpdate: true,
-    
 })
-export class UserCredentials {
+export class AccountManager {
     @Fields.cuid()
     id = '';
 
@@ -29,8 +25,8 @@ export class UserCredentials {
     @Fields.boolean()
     isActive = true;
 
-    @Fields.object()
-    roles: string[] = [];
+    @Fields.string({ validate: Validators.required })
+    role!: 'Doctor' | 'Patient' | 'Admin' | 'Staff';
 
     @Fields.createdAt()
     createdAt?: Date
